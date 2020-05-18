@@ -32,9 +32,8 @@ const Calculator = {
 }
 
 let actionApplyer = function(int, arr){
-  let total = int
   for(let i=0; i < arr.length; i++){
-    total = arr[i](total)
+    int = arr[i](int)
   }
-return total
+return int
 }
